@@ -1,33 +1,24 @@
 ---
-title: 'Introduction'
-description: 'Example section for showcasing API endpoints'
+title: "Introduction"
+description: "Get started with the Webdeeds HTTP API"
 ---
-
-<Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
-</Note>
 
 ## Welcome
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
+Webdeeds provides a public API over HTTP that follows the OpenAPI 3.0 schema.
 
 <Card
-  title="Plant Store Endpoints"
+  title="Webdeeds Endpoints"
   icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
+  href="https://api.webdeeds.org/openapi.json"
 >
   View the OpenAPI specification file
 </Card>
 
 ## Authentication
 
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
+The Webdeeds API is intentionally open as such it does not require authentication for access.
 
-```json
-"security": [
-  {
-    "bearerAuth": []
-  }
-]
-```
+## Rate limiting
+
+The Webdeeds API rate limits to ensure fair usage for all clients. If you exceed this limit, you will receive a `429 Too Many Requests` response. For higher rate limits, please [contact support](mailto:hi@webdeeds.org).
